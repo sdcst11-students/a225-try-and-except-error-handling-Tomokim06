@@ -48,7 +48,7 @@ while True:
 
         sol1 = round(((-b-math.sqrt(d))/(2*a)), 2)
         sol2 = round(((-b+math.sqrt(d))/(2*a)), 2)
-        if (b**2)-(4*a*c) <0:
+        if (b**2)-(4*a*c) >=0:
           print(f'The solution are {sol1} and {sol2}')
         else:  
           print("There are no real roots to the equation")
