@@ -19,8 +19,9 @@ numbers = [0,1,2,3,4]
 
 try:
     for i in numbers:
-        x = 1/i
+        x = 1/float(i)
         print(x)
 except:
         print(f"The reciprocal of {i} does not exist")
-        
+
+            
