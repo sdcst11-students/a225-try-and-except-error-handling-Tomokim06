@@ -14,7 +14,7 @@ The reciprocal of 2 is 0.5
 The reciprocal of 3 is 0.3333333333333333
 The reciprocal of 4 is 0.25
 """
-numbers = [0,1,2,3,4]
+numbers = [1,2,3,4]
 
 while True:
     try:
@@ -22,6 +22,5 @@ while True:
             x = 1/float(i)
             print(x)
     except:
-            print(f"The reciprocal of {i} does not exist")
-            break
-            
+        print(f"The reciprocal of {i} does not exist")
+        break
