@@ -50,7 +50,7 @@ while True:
         sol2 = round(((-b+math.sqrt(d))/(2*a)), 2)
         if (b**2)-(4*a*c) >=0:
           print(f'The solution are {sol1} and {sol2}')
-        else:  
+        if (b**2)-(4*a*c) <0:
           print("There are no real roots to the equation")
     except:
-      print("Those are not valid values for a, b or c")
+      print("Those are nalid values for a, b or c")
