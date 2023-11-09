@@ -16,12 +16,12 @@ The reciprocal of 4 is 0.25
 """
 numbers = [0,1,2,3,4]
 
-
-try:
-    for i in numbers:
-        x = 1/float(i)
-        print(x)
-except:
-        print(f"The reciprocal of {i} does not exist")
-
+while True:
+    try:
+        for i in numbers:
+            x = 1/float(i)
+            print(x)
+    except:
+            print(f"The reciprocal of {i} does not exist")
+            break
             
