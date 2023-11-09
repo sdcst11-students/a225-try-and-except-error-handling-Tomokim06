@@ -37,20 +37,20 @@ import math
 #("Enter in the coefficients for a quadratic equation in the format:")
 #print("  ax^2 + bx + c = 0")
 
+
 while True:
-  while True:
-    try:
-        a = float(input("enter 'a' value: "))
-        b = float(input("enter 'b' value: "))
-        c = float(input("enter 'c' value: "))
+  try:
+      a = float(input("enter 'a' value: "))
+      b = float(input("enter 'b' value: "))
+      c = float(input("enter 'c' value: "))
 
-        d = (b**2) - (4*a*c)
+      d = (b**2) - (4*a*c)
 
-        sol1 = round(((-b-math.sqrt(d))/(2*a)), 2)
-        sol2 = round(((-b+math.sqrt(d))/(2*a)), 2)
-        if (b**2)-(4*a*c) >=0:
-          print(f'The solution are {sol1} and {sol2}')
-        if (b**2)-(4*a*c) <0:
-          print("There are no real roots to the equation")
-    except:
-      print("Those are nalid values for a, b or c")
+      sol1 = round(((-b-math.sqrt(d))/(2*a)), 2)
+      sol2 = round(((-b+math.sqrt(d))/(2*a)), 2)
+      if (b**2)-(4*a*c) >=0:
+        print(f'The solution are {sol1} and {sol2}')
+      if (b**2)-(4*a*c) <0:
+        print("There are no real roots to the equation")
+  except:
+    print("Those are not valid values for a, b or c")
